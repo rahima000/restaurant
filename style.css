@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+/* NAV */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 50px;
+}
+
+.hero-text p {
+  margin: 10px 0;
+}
+
+/* BUTTON */
+.btn {
+  background: #ff6600;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff4500;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background: #1a1a1a;
+}
+
+.feature {
+  max-width: 250px;
+  text-align: center;
+}
+
+/* MENU */
+.menu {
+  padding: 60px;
+  text-align: center;
+}
+
+.menu-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #1a1a1a;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 60px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(to right, #ff6600, #ff4500);
+  padding: 60px;
+  text-align: center;
+}
+
+/* CONTACT */
+.contact {
+  padding: 50px;
+  text-align: center;
+  background: #111;
+}
+/* CONTACT UPGRADE */
+.contact {
+  padding: 60px;
+  background: #111;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  max-width: 300px;
+  text-align: left;
+}
+
+.contact-info a {
+  color: #00ff2f;
+  text-decoration: none;
+}
+
+.map {
+  width: 400px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.map {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+}
