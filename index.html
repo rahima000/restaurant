@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coastal Flame</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,93 +11,97 @@
 <!-- NAV -->
 <header>
   <h1>Coastal Flame</h1>
-  <nav>
+  <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  <nav class="menu-links" id="mainMenu">
+    <a href="#hero">Home</a>
     <a href="#menu">Menu</a>
-    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
-
 <!-- HERO -->
-<section class="hero">
+<section id="hero" class="hero">
   <div class="hero-text">
     <h2>Fine Dining Experience</h2>
     <p>Premium meals crafted with passion</p>
-    <a href="https://wa.me/254700000000" class="btn">Order Now</a>
+    <a href="https://wa.me/254700000000?text=Hi%2C+I%27d+like+to+book+a+table" class="btn">Book via WhatsApp</a>
   </div>
 </section>
 
 <!-- MENU -->
 <section id="menu" class="menu">
-  <h2>Our Full Menu</h2>
+  <h2>Menu</h2>
+  <p>Tap on a dish to order straight to WhatsApp.</p>
 
   <div class="menu-grid">
-
-    <!-- ITEM -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80" alt="Beef Burger">
       <div class="card-content">
         <h3>Beef Burger</h3>
         <p>KSh 500</p>
+        <a href="https://wa.me/254700000000?text=Hi%2C+I+want+to+buy+Beef+Burger" class="btn">Buy</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+      <img src="images/grilled chicken.avif" alt="Grilled Chicken">
       <div class="card-content">
         <h3>Grilled Chicken</h3>
         <p>KSh 600</p>
+        <a href="https://wa.me/254700000000?text=Hi%2C+I+want+to+buy+Grilled+Chicken" class="btn">Buy</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Pilau Special">
       <div class="card-content">
         <h3>Pilau Special</h3>
         <p>KSh 400</p>
+        <a href="https://wa.me/254700000000?text=Hi%2C+I+want+to+buy+Pilau+Special" class="btn">Buy</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+      <img src="images/pizza.avif" alt="Pizza">
       <div class="card-content">
         <h3>Pizza</h3>
         <p>KSh 800</p>
+        <a href="https://wa.me/254700000000?text=Hi%2C+I+want+to+buy+Pizza" class="btn">Buy</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+      <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Pasta">
       <div class="card-content">
         <h3>Pasta</h3>
         <p>KSh 700</p>
+        <a href="https://wa.me/254700000000?text=Hi%2C+I+want+to+buy+Pasta" class="btn">Buy</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/fries.avif">
+      <img src="images/fries.avif" alt="Fries & Chicken">
       <div class="card-content">
         <h3>Fries & Chicken</h3>
         <p>KSh 450</p>
+        <a href="https://wa.me/254700000000?text=Hi%2C+I+want+to+buy+Fries+%26+Chicken" class="btn">Buy</a>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- FEATURES -->
 <section class="features">
   <div class="feature">
-    <h3>🔥 Fresh Ingredients</h3>
-    <p>We use only the best quality produce</p>
+    <h3>Fresh Ingredients</h3>
+    <p>Locally sourced and prepared daily.</p>
   </div>
   <div class="feature">
-    <h3>⚡ Fast Delivery</h3>
-    <p>Quick service straight to your door</p>
+    <h3>Fast Delivery</h3>
+    <p>Within Nairobi in 30 min.</p>
   </div>
   <div class="feature">
-    <h3>⭐ Top Rated</h3>
-    <p>Loved by customers across Nairobi</p>
+    <h3>Top Rated</h3>
+    <p>5-star customer satisfaction.</p>
   </div>
 </section>
 
@@ -104,54 +109,45 @@
 <section id="gallery" class="gallery">
   <h2>Our Space</h2>
   <div class="gallery-grid">
-    <img src="images/tables.avif">
-    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
-    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
-    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c">
+    <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=800&q=80" alt="Restaurant interior">
+    <img src="images/dining table.avif" alt="Dining table">
+    <img src="images/kitchen.avif" alt="Kitchen">
+    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="Chef plating">
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta">
-  <h2>Ready to order?</h2>
-  <a href="https://wa.me/254725880776" class="btn">Chat on WhatsApp</a>
+  <h2>Book a table now</h2>
+  <a href="https://wa.me/254700000000?text=Hello%2C+I+want+to+book+a+table+for+2" class="btn">Book via WhatsApp</a>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
-  <h2>Visit Us</h2>
-
+  <h2>Contact</h2>
   <div class="contact-container">
-
-    <!-- INFO -->
     <div class="contact-info">
-      <p>📍 <a href="https://www.google.com/maps/search/?api=1&query=Westlands+Nairobi" target="_blank">
-        Westlands, Nairobi
-      </a></p>
-
+      <p>📍 <a href="https://www.google.com/maps/search/?api=1&query=Westlands+Nairobi" target="_blank">Westlands, Nairobi</a></p>
       <p>📞 <a href="tel:+254700000000">+254 700 000000</a></p>
       <p>⏰ 9AM - 10PM</p>
-
-      <a href="https://www.google.com/maps/dir/?api=1&destination=Westlands+Nairobi" target="_blank" class="btn">
-        Get Directions
-      </a>
+      <a href="https://wa.me/254700000000" target="_blank" class="btn">WhatsApp</a>
     </div>
-
-    <!-- MAP -->
     <div class="map">
-      <iframe 
-        src="https://www.google.com/maps?q=Westlands,Nairobi&output=embed"
-        loading="lazy">
-      </iframe>
+      <iframe src="https://www.google.com/maps?q=Westlands,Nairobi&output=embed" loading="lazy"></iframe>
     </div>
-
   </div>
-</section>
 </section>
 
 <footer>
   <p>© 2026 Coastal Flame</p>
 </footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mainMenu');
+    menu.classList.toggle('active');
+  }
+</script>
 
 </body>
 </html>
